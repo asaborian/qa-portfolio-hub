@@ -18,6 +18,7 @@
 
 ## 📝 Recent Learning Logs
 
+- **2026-06-06 08:42**: リポジトリ作成。学習記録開始。
 - **2026-06-03 08:30**: add_log.py の動作テスト
 
 ## 💬 Interview FAQ (Excerpt)
