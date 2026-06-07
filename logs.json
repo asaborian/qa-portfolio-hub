@@ -14,5 +14,9 @@
   {
     "date": "2026-06-08 07:20",
     "message": "handleChange関数ではe.target.valueを使って一文字ごとに最新の文字列を取得してStateに保存する。"
+  },
+  {
+    "date": "2026-06-08 07:20",
+    "message": "handleSubmit関数ではe.preventDefault()を実行して送信時の画面リロードを防ぎ、Stateの消失を防止する。"
   }
 ]
