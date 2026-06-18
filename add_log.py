@@ -10,6 +10,7 @@ HEADER_FILE = 'header.md'
 FAQ_FILE = 'interview-faq.md'
 README_FILE = 'README.md'
 MAX_LOGS_IN_README = 10
+MAX_FAQ_IN_README = 3
 
 def add_log(message):
     """logs.json に新しいログを追加する"""
@@ -49,10 +50,15 @@ def rebuild_readme():
     content += "\n"
     
     # 3. Interview FAQ 部分
-    content += "## 💬 Interview FAQ (Excerpt)\n\n"
+    content += "## 💬 Interview FAQ\n\n"
     if os.path.exists(FAQ_FILE):
         with open(FAQ_FILE, 'r', encoding='utf-8') as f:
-            content += f.read() + "\n"
+            faq_text = f.read()
+        # 「### Q:」を区切りにブロック分割し、上からMAX件数分だけ取り出す
+        blocks = [b.rstrip() for b in faq_text.split('### Q:') if b.strip()]
+        excerpt = blocks[:MAX_FAQ_IN_README]
+        content += "\n\n".join("### Q:" + b for b in excerpt) + "\n"
+        content += f"\n📄 **[続きを読む → {FAQ_FILE}]({FAQ_FILE})**\n"
             
     with open(README_FILE, 'w', encoding='utf-8') as f:
         f.write(content)
