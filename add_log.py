@@ -9,7 +9,7 @@ LOG_FILE = 'logs.json'
 HEADER_FILE = 'header.md'
 FAQ_FILE = 'interview-faq.md'
 README_FILE = 'README.md'
-MAX_LOGS_IN_README = 10
+MAX_LOGS_IN_README = 5
 MAX_FAQ_IN_README = 3
 
 def add_log(message):
