@@ -126,5 +126,9 @@
   {
     "date": "2026-07-01 23:10",
     "message": "デプロイ(Vercel)とDB(Supabase)を分ける意義 / 1つに集約するとアカウント管理が楽だが、あえて分散させることで将来のサービス乗り換えや拡張がしやすくなる(ベンダーロックインの回避)"
+  },
+  {
+    "date": "2026-07-02 17:59",
+    "message": "PrismaはServer ComponentからDB操作するためのライブラリ / Supabaseのプロジェクト作成時の「Enable Data API」のチェックボックスはClient ComponentからDB操作するための機能 / DB操作は原則Server Componentで行うべきだが、それだとうまくいかない場合に限りClient Componentで行う / ただし、Client Componentから行う場合は、権限等の設定をきちんとしておかないとセキュリティの危険がある。"
   }
 ]
