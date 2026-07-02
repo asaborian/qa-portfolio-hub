@@ -18,7 +18,7 @@
 ### 🛠️ 技術習得
 - [x] Tailwind CSS 基礎
 - [x] TypeScript 基礎
-- [ ] React 基礎
+- [x] React 基礎
 - [ ] Next.js 基礎
 - [ ] Playwright 基礎
 - [ ] GitHub Actions 基礎
@@ -38,11 +38,11 @@
 
 ## 📝 Recent Learning Logs
 
+- **2026-07-03 07:43**: プロジェクトの最初に「.env」へSupabaseのデータベース接続URIを記述し、「schema.prisma」にテーブル構造を定義する。その後「npx prisma migrate dev --name init」を実行すると、「prisma/migrations」ディレクトリ内にテーブル作成用のSQL文が生成されると同時に、そのSQL文が自動実行されてSupabase上に実際のテーブルが作成される。
 - **2026-07-02 17:59**: PrismaはServer ComponentからDB操作するためのライブラリ / Supabaseのプロジェクト作成時の「Enable Data API」のチェックボックスはClient ComponentからDB操作するための機能 / DB操作は原則Server Componentで行うべきだが、それだとうまくいかない場合に限りClient Componentで行う / ただし、Client Componentから行う場合は、権限等の設定をきちんとしておかないとセキュリティの危険がある。
 - **2026-07-01 23:10**: デプロイ(Vercel)とDB(Supabase)を分ける意義 / 1つに集約するとアカウント管理が楽だが、あえて分散させることで将来のサービス乗り換えや拡張がしやすくなる(ベンダーロックインの回避)
 - **2026-07-01 23:04**: json-serverの挙動 / GET: 全件または特定レコードを返す / POST: 新規作成されたレコードを返す / PUT: 更新されたレコードを返す / DELETE: 空オブジェクト{}を返す
 - **2026-06-30 16:19**: Server Componentである親ページからpropsで受け取ったものを表示している場合、親ページの再フェッチが起きない限り、古いまま表示される。それを解決するために、router.refresh()を行う。
-- **2026-06-29 06:23**: プログラムからDBにレコード追加のリクエストをするときは、idは指定せずにDBの自動採番に任せるのが業界標準
 
 ## 💬 Interview FAQ
 

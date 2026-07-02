@@ -18,7 +18,7 @@
 ### 🛠️ 技術習得
 - [x] Tailwind CSS 基礎
 - [x] TypeScript 基礎
-- [ ] React 基礎
+- [x] React 基礎
 - [ ] Next.js 基礎
 - [ ] Playwright 基礎
 - [ ] GitHub Actions 基礎

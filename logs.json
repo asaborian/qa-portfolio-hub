@@ -130,5 +130,9 @@
   {
     "date": "2026-07-02 17:59",
     "message": "PrismaはServer ComponentからDB操作するためのライブラリ / Supabaseのプロジェクト作成時の「Enable Data API」のチェックボックスはClient ComponentからDB操作するための機能 / DB操作は原則Server Componentで行うべきだが、それだとうまくいかない場合に限りClient Componentで行う / ただし、Client Componentから行う場合は、権限等の設定をきちんとしておかないとセキュリティの危険がある。"
+  },
+  {
+    "date": "2026-07-03 07:43",
+    "message": "プロジェクトの最初に「.env」へSupabaseのデータベース接続URIを記述し、「schema.prisma」にテーブル構造を定義する。その後「npx prisma migrate dev --name init」を実行すると、「prisma/migrations」ディレクトリ内にテーブル作成用のSQL文が生成されると同時に、そのSQL文が自動実行されてSupabase上に実際のテーブルが作成される。"
   }
 ]
