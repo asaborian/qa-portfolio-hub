@@ -38,11 +38,11 @@
 
 ## 📝 Recent Learning Logs
 
+- **2026-07-05 09:32**: プロジェクトディレクトリの外にあるものとやりとりする場合は必ずawaitを使う(DB操作,APIからのデータ取得,Playwrightでのブラウザ操作など)
 - **2026-07-05 09:19**: import文の{}の有無は元ファイルのexportの記述次第 / 1ファイル内に export const useState; export const useEffect; など複数ある場合は{}あり→ import { useState, useEffect } from ... / export default Todo; のように１つだけの場合は{}なし→ import Todo from ... / このためフレームワークやライブラリからは{}ありでimportすることが多いが、自作のコンポーネントは通常{}なしでimportする
 - **2026-07-05 02:51**: API動作確認コマンド / curl -i -X GET http://localhost:3000/api/blog / -i:レスポンスヘッダー 200 OK や 500 などを表示 / -X GET: リクエストメソッド(デフォルトでGETのため省略可)
 - **2026-07-03 07:43**: プロジェクトの最初に「.env」へSupabaseのデータベース接続URIを記述し、「schema.prisma」にテーブル構造を定義する。その後「npx prisma migrate dev --name init」を実行すると、「prisma/migrations」ディレクトリ内にテーブル作成用のSQL文が生成されると同時に、そのSQL文が自動実行されてSupabase上に実際のテーブルが作成される。
 - **2026-07-02 17:59**: PrismaはServer ComponentからDB操作するためのライブラリ / Supabaseのプロジェクト作成時の「Enable Data API」のチェックボックスはClient ComponentからDB操作するための機能 / DB操作は原則Server Componentで行うべきだが、それだとうまくいかない場合に限りClient Componentで行う / ただし、Client Componentから行う場合は、権限等の設定をきちんとしておかないとセキュリティの危険がある。
-- **2026-07-01 23:10**: デプロイ(Vercel)とDB(Supabase)を分ける意義 / 1つに集約するとアカウント管理が楽だが、あえて分散させることで将来のサービス乗り換えや拡張がしやすくなる(ベンダーロックインの回避)
 
 ## 💬 Interview FAQ
 

@@ -142,5 +142,9 @@
   {
     "date": "2026-07-05 09:19",
     "message": "import文の{}の有無は元ファイルのexportの記述次第 / 1ファイル内に export const useState; export const useEffect; など複数ある場合は{}あり→ import { useState, useEffect } from ... / export default Todo; のように１つだけの場合は{}なし→ import Todo from ... / このためフレームワークやライブラリからは{}ありでimportすることが多いが、自作のコンポーネントは通常{}なしでimportする"
+  },
+  {
+    "date": "2026-07-05 09:32",
+    "message": "プロジェクトディレクトリの外にあるものとやりとりする場合は必ずawaitを使う(DB操作,APIからのデータ取得,Playwrightでのブラウザ操作など)"
   }
 ]
