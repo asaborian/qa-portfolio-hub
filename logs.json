@@ -138,5 +138,9 @@
   {
     "date": "2026-07-05 02:51",
     "message": "API動作確認コマンド / curl -i -X GET http://localhost:3000/api/blog / -i:レスポンスヘッダー 200 OK や 500 などを表示 / -X GET: リクエストメソッド(デフォルトでGETのため省略可)"
+  },
+  {
+    "date": "2026-07-05 09:19",
+    "message": "import文の{}の有無は元ファイルのexportの記述次第 / 1ファイル内に export const useState; export const useEffect; など複数ある場合は{}あり→ import { useState, useEffect } from ... / export default Todo; のように１つだけの場合は{}なし→ import Todo from ... / このためフレームワークやライブラリからは{}ありでimportすることが多いが、自作のコンポーネントは通常{}なしでimportする"
   }
 ]
