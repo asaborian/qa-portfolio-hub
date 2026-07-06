@@ -38,11 +38,11 @@
 
 ## 📝 Recent Learning Logs
 
+- **2026-07-06 21:54**: HTTPメソッドとステータスコードの対応/ GET/PUT: 200 OK / POST: 201 Created / DELETE: 204 No Content / 実務では例外あり: POSTやDELETEでも完了メッセージ等を返すために 200 OK を使用するケースもある
 - **2026-07-05 17:08**: CI/CDの具体的な流れ: githubにpush -> github actions上でdockerコンテナ(サーバーとクライアント)自動起動 -> コンテナ内でクライアントからサーバーに対してplaywrightテスト自動実行 -> 問題なければvercelの検証用環境に自動反映 -> 手動テストして問題なければvercelの本番環境に反映
 - **2026-07-05 11:03**: 便利なライブラリを使うのは、開発スピードと引き換えに「わけわからんイライラ」を背負うトレードオフ。vanillaに近いほど理不尽なエラーは減るけど、書くのは遅くなる。楽をする代償としてブラックボックスを抱える。
 - **2026-07-05 09:32**: プロジェクトディレクトリの外にあるものとやりとりする場合は必ずawaitを使う(DB操作,APIからのデータ取得,Playwrightでのブラウザ操作など)
 - **2026-07-05 09:19**: import文の{}の有無は元ファイルのexportの記述次第 / 1ファイル内に export const useState; export const useEffect; など複数ある場合は{}あり→ import { useState, useEffect } from ... / export default Todo; のように１つだけの場合は{}なし→ import Todo from ... / このためフレームワークやライブラリからは{}ありでimportすることが多いが、自作のコンポーネントは通常{}なしでimportする
-- **2026-07-05 02:51**: API動作確認コマンド / curl -i -X GET http://localhost:3000/api/blog / -i:レスポンスヘッダー 200 OK や 500 などを表示 / -X GET: リクエストメソッド(デフォルトでGETのため省略可)
 
 ## 💬 Interview FAQ
 
