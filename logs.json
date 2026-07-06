@@ -166,5 +166,9 @@
   {
     "date": "2026-07-06 22:11",
     "message": "API側のロジックに単にCRUD操作の内容を書いただけだと、誰でも実行できてしまうため、route.tsには認証トークンの検証等を含める必要がある"
+  },
+  {
+    "date": "2026-07-07 08:11",
+    "message": "仮想化技術(ハイパーバイザー型/ホスト型/コンテナ型)の違い: https://notes.asabori.com/virtualization-technologies-key-differences-among-hypervisor-hosted-and-containerized-models-and-the-architecture-of-wsl2-jp/"
   }
 ]

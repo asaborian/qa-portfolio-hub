@@ -38,11 +38,11 @@
 
 ## 📝 Recent Learning Logs
 
+- **2026-07-07 08:11**: 仮想化技術(ハイパーバイザー型/ホスト型/コンテナ型)の違い: https://notes.asabori.com/virtualization-technologies-key-differences-among-hypervisor-hosted-and-containerized-models-and-the-architecture-of-wsl2-jp/
 - **2026-07-06 22:11**: API側のロジックに単にCRUD操作の内容を書いただけだと、誰でも実行できてしまうため、route.tsには認証トークンの検証等を含める必要がある
 - **2026-07-06 22:06**: DBの自動採番エラー / PostgreSQL等のDBは次に発行するIDのカウンターを管理している / GUIから手動でレコード追加、スキーマの定義変更、同期等を行った際に、カウンターと実際のデータにズレが生じることがある / POSTしてエラーになっても、カウンターだけは動くので、もう一回同じようにPOSTすると成功するケースがある
 - **2026-07-06 21:54**: HTTPメソッドとステータスコードの対応/ GET/PUT: 200 OK / POST: 201 Created / DELETE: 204 No Content / 実務では例外あり: POSTやDELETEでも完了メッセージ等を返すために 200 OK を使用するケースもある
 - **2026-07-05 17:08**: CI/CDの具体的な流れ: githubにpush -> github actions上でdockerコンテナ(サーバーとクライアント)自動起動 -> コンテナ内でクライアントからサーバーに対してplaywrightテスト自動実行 -> 問題なければvercelの検証用環境に自動反映 -> 手動テストして問題なければvercelの本番環境に反映
-- **2026-07-05 11:03**: 便利なライブラリを使うのは、開発スピードと引き換えに「わけわからんイライラ」を背負うトレードオフ。vanillaに近いほど理不尽なエラーは減るけど、書くのは遅くなる。楽をする代償としてブラックボックスを抱える。
 
 ## 💬 Interview FAQ
 
