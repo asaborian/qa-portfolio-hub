@@ -1,7 +1,7 @@
 # QA Portfolio Hub
 
 ## 🚀 Portfolios
-- [Main App (Next.js)](https://github.com/your-name/your-app) - CRUDアプリ、Playwright自動テスト導入済 (サンプル)
+- [Staff benefit flow (Next.js)](https://github.com/asaborian/staff-benefit-flow) - 企業向け福利厚生給付管理(申請受付/審査/振込データ出力)システムのプロトタイプ、PlaywrightによるE2Eテスト、CI/CD構築
 
 ## 📊 Current Status
 - **Goal**: 2029年1月、QAエンジニアとしてのキャリア開始（38歳）
@@ -19,7 +19,8 @@
 - [x] Tailwind CSS 基礎
 - [x] TypeScript 基礎
 - [x] React 基礎
-- [ ] Next.js 基礎
+- [x] Next.js 基礎
+- [ ] Supabase 基礎
 - [ ] Playwright 基礎
 - [ ] GitHub Actions 基礎
 
