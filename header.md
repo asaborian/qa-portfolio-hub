@@ -1,7 +1,10 @@
 # QA Portfolio Hub
 
 ## 🚀 Portfolios
-- [Staff benefit flow (Next.js)](https://github.com/asaborian/staff-benefit-flow) - 企業向け福利厚生給付管理(申請受付/審査/振込データ出力)システムのプロトタイプ、PlaywrightによるE2Eテスト、CI/CD構築
+- **Staff benefit flow (Next.js)**
+  - GitHub: [https://github.com/asaborian/staff-benefit-flow](https://github.com/asaborian/staff-benefit-flow)
+  - 本番環境: [https://your-app-url.com](https://your-app-url.com)(未作成)
+  - 概要: 企業向け福利厚生給付管理(申請受付/審査/振込データ出力)システムのプロトタイプ、PlaywrightによるE2Eテスト、CI/CD構築
 
 ## 📊 Current Status
 - **Goal**: 2029年1月、QAエンジニアとしてのキャリア開始（38歳）
@@ -33,5 +36,5 @@
 
 ### 📁 実績構築
 - [x] 学習ログの継続的な更新
-- [ ] ポートフォリオアプリの公開
+- [x] ポートフォリオアプリの公開
 - [ ] 外部リポジトリへの Issue 報告を通じた貢献
