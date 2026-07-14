@@ -1,20 +1,22 @@
 # QA Portfolio Hub
 
 ## 🚀 Portfolios
+- **Material request (Next.js)**
+  - GitHub: [https://github.com/asaborian/material-request](https://github.com/asaborian/material-request)
+  - 本番環境: [https://your-app-url.com](https://your-app-url.com)(未作成)
+  - 概要: 新規材料採用申請受付システムのプロトタイプ、PlaywrightによるE2Eテスト、CI/CD構築
 - **Staff benefit flow (Next.js)**
-  - GitHub: [https://github.com/asaborian/staff-benefit-flow](https://github.com/asaborian/staff-benefit-flow)
+  - GitHub: [https://github.com/asaborian/staff-benefit-flow](https://github.com/asaborian/staff-benefit-flow)(作成一時中断)
   - 本番環境: [https://your-app-url.com](https://your-app-url.com)(未作成)
   - 概要: 企業向け福利厚生給付管理(申請受付/審査/振込データ出力)システムのプロトタイプ、PlaywrightによるE2Eテスト、CI/CD構築
 
 ## 📊 Current Status
 - **Goal**: 2029年1月、QAエンジニアとしてのキャリア開始（38歳）
-- **Current**: 公務員（現在育休中、2028年1月職場復帰予定）
+- **Current**: 公務員（現在育休中）
 - **Strategic Timeline**:
     - 2026年〜2027年: 技術習得（Next.js/Playwright）および資格取得（AP/SC/JSTQB）
     - 2027年05月: 転職エージェントへの相談開始（市場価値の確認およびマッチング精査）
-    - 2027年07月: 現職へ退職意向を伝達（退職までに欠員補充が間に合うよう、このタイミングで伝達）
-    - 2028年01月〜12月: 現職での公務員業務と並行し、実務に即したQAスキルの研鑽
-    - 2029年01月: エンジニアとしてのキャリア開始（育児と両立可能な環境での稼働）
+    - 2028年01月: エンジニアとしてのキャリア開始（育児と両立可能な環境での稼働）
 
 ## 🗺️ Learning Roadmap (To-do List)
 
@@ -23,7 +25,6 @@
 - [x] TypeScript 基礎
 - [x] React 基礎
 - [x] Next.js 基礎
-- [ ] Supabase 基礎
 - [ ] Playwright 基礎
 - [ ] GitHub Actions 基礎
 
@@ -42,11 +43,11 @@
 
 ## 📝 Recent Learning Logs
 
+- **2026-07-14 16:47**: youtubeのチュートリアル動画を探すよりも公式ドキュメントを読んでgeminiに質問する方が学習しやすい
 - **2026-07-10 15:39**: Ubuntuなどの「ディストリビューション」とは、Linuxカーネルに組み合わせる多様なOSSやアプリを選んで一つにまとめたものを指す用語。デスクトップ画面（GNOME）、フォルダ画面（Nautilus）、ターミナル（GNOME端末）など、OSの機能として目にするものはUbuntu自体ではなく、すべてUbuntuが選んで集めた個別のソフトウェアである。
 - **2026-07-09 08:59**: プルリクとCI/CDの仕組み: https://notes.asabori.com/https-notes-asabori-com-how-modern-ci-cd-release-pipelines-work-a-deep-dive-into-git-github-and-vercel-jp/
 - **2026-07-07 08:11**: 仮想化技術(ハイパーバイザー型/ホスト型/コンテナ型)の違い: https://notes.asabori.com/virtualization-technologies-key-differences-among-hypervisor-hosted-and-containerized-models-and-the-architecture-of-wsl2-jp/
 - **2026-07-06 22:11**: API側のロジックに単にCRUD操作の内容を書いただけだと、誰でも実行できてしまうため、route.tsには認証トークンの検証等を含める必要がある
-- **2026-07-06 22:06**: DBの自動採番エラー / PostgreSQL等のDBは次に発行するIDのカウンターを管理している / GUIから手動でレコード追加、スキーマの定義変更、同期等を行った際に、カウンターと実際のデータにズレが生じることがある / POSTしてエラーになっても、カウンターだけは動くので、もう一回同じようにPOSTすると成功するケースがある
 
 ## 💬 Interview FAQ
 
