@@ -13,11 +13,11 @@
 ## 🚀 Portfolios
 - **Material request (Next.js)**
   - GitHub: [https://github.com/asaborian/material-request](https://github.com/asaborian/material-request)
-  - 本番環境: [https://your-app-url.com](https://your-app-url.com)(未作成)
-  - 概要: 新規材料採用申請受付システムのプロトタイプ、PlaywrightによるE2Eテスト、CI/CD構築
+  - 本番環境: [https://material-request.asabori.com](https://material-request.asabori.com)
+  - 概要: 病院向け新規材料採用申請受付システムのプロトタイプ、PlaywrightによるE2Eテスト、CI/CD構築
 - **Staff benefit flow (Next.js)**
   - GitHub: [https://github.com/asaborian/staff-benefit-flow](https://github.com/asaborian/staff-benefit-flow)(作成一時中断)
-  - 本番環境: [https://your-app-url.com](https://your-app-url.com)(未作成)
+  - 本番環境: [https://staff-benefit-flow.asabori.com](https://staff-benefit-flow.asabori.com)(未作成)
   - 概要: 企業向け福利厚生給付管理(申請受付/審査/振込データ出力)システムのプロトタイプ、PlaywrightによるE2Eテスト、CI/CD構築
 
 ## 📊 Current Status

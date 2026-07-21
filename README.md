@@ -13,11 +13,11 @@
 ## 🚀 Portfolios
 - **Material request (Next.js)**
   - GitHub: [https://github.com/asaborian/material-request](https://github.com/asaborian/material-request)
-  - 本番環境: [https://your-app-url.com](https://your-app-url.com)(未作成)
-  - 概要: 新規材料採用申請受付システムのプロトタイプ、PlaywrightによるE2Eテスト、CI/CD構築
+  - 本番環境: [https://material-request.asabori.com](https://material-request.asabori.com)
+  - 概要: 病院向け新規材料採用申請受付システムのプロトタイプ、PlaywrightによるE2Eテスト、CI/CD構築
 - **Staff benefit flow (Next.js)**
   - GitHub: [https://github.com/asaborian/staff-benefit-flow](https://github.com/asaborian/staff-benefit-flow)(作成一時中断)
-  - 本番環境: [https://your-app-url.com](https://your-app-url.com)(未作成)
+  - 本番環境: [https://staff-benefit-flow.asabori.com](https://staff-benefit-flow.asabori.com)(未作成)
   - 概要: 企業向け福利厚生給付管理(申請受付/審査/振込データ出力)システムのプロトタイプ、PlaywrightによるE2Eテスト、CI/CD構築
 
 ## 📊 Current Status
@@ -53,11 +53,11 @@
 
 ## 📝 Recent Learning Logs
 
+- **2026-07-21 21:20**: 「非NULL」は主キーの条件の１つだが、候補キーの条件としては「非NULL」は含まない。
 - **2026-07-20 14:05**: UMLの多重度「A..B」は「AからBまで（最小〜最大）」を表し、「0..1」は0〜1個、「1..*」は1〜無限個を意味する。
 - **2026-07-17 09:04**: AP試験・タスク管理 / 解き方は「まず優先度が高いタスクをスケジュール通りノンストップで配置し、CPUが空いている時間に優先度が低いタスクを割り当てる」という2ステップで処理する。これは試験で方式の指定がない場合、現代OSの常識である「プリエンティブ方式」が前提となるためである。この方式では、優先度の高いタスクがすべてを押しのけて最優先で進む。優先度の低いタスクはCPUが空いている時間だけを使って走り、優先度の高いタスクのI/Oが終了した瞬間に、実行途中であっても即座にCPUを奪い取られる。
 - **2026-07-14 16:47**: youtubeのチュートリアル動画を探すよりも公式ドキュメントを読んでgeminiに質問する方が学習しやすい
 - **2026-07-10 15:39**: Ubuntuなどの「ディストリビューション」とは、Linuxカーネルに組み合わせる多様なOSSやアプリを選んで一つにまとめたものを指す用語。デスクトップ画面（GNOME）、フォルダ画面（Nautilus）、ターミナル（GNOME端末）など、OSの機能として目にするものはUbuntu自体ではなく、すべてUbuntuが選んで集めた個別のソフトウェアである。
-- **2026-07-09 08:59**: プルリクとCI/CDの仕組み: https://notes.asabori.com/https-notes-asabori-com-how-modern-ci-cd-release-pipelines-work-a-deep-dive-into-git-github-and-vercel-jp/
 
 ## 💬 Interview FAQ
 
