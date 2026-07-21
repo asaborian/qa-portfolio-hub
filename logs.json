@@ -194,5 +194,9 @@
   {
     "date": "2026-07-21 21:20",
     "message": "「非NULL」は主キーの条件の１つだが、候補キーの条件としては「非NULL」は含まない。"
+  },
+  {
+    "date": "2026-07-22 06:51",
+    "message": "Gitの操作ミスが発覚し原因を調査した。ブランチ管理の基本とAIの不適切な指示を見抜く難しさを再認識した。/ https://notes.asabori.com/git-branch-commit-inclusion/"
   }
 ]
