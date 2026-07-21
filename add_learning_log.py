@@ -5,12 +5,13 @@ import subprocess
 import os
 
 # 設定
-LOG_FILE = 'logs.json'
+LOG_FILE = 'learning-logs.json'
 HEADER_FILE = 'header.md'
 FAQ_FILE = 'interview-faq.md'
 README_FILE = 'README.md'
 MAX_LOGS_IN_README = 5
 MAX_FAQ_IN_README = 3
+LOGS_MD_FILE = 'learning-logs.md'
 
 def add_log(message):
     """logs.json に新しいログを追加する"""
@@ -47,6 +48,7 @@ def rebuild_readme():
             # 最新のものを上に表示（reversed）
             for log in reversed(logs[-MAX_LOGS_IN_README:]):
                 content += f"- **{log['date']}**: {log['message']}\n"
+        content += f"\n📄 **[すべての学習ログを見る → {LOGS_MD_FILE}]({LOGS_MD_FILE})**\n"
     content += "\n"
     
     # 3. Interview FAQ 部分
@@ -76,12 +78,24 @@ def git_push(message):
     except subprocess.CalledProcessError as e:
         print(f"Git operation failed: {e}")
 
+def rebuild_learning_logs():
+    content = "# 📝 全学習ログ一覧\n\n[← READMEに戻る](./README.md)\n\n"
+    if os.path.exists(LOG_FILE):
+        with open(LOG_FILE, 'r', encoding='utf-8') as f:
+            logs = json.load(f)
+        for log in reversed(logs):
+            content += f"- **{log['date']}**:{log['message']}\n"
+    with open(LOGS_MD_FILE, 'w', encoding='utf-8') as f:
+        f.write(content)
+
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("Usage: python3 add_log.py \"Your learning message\"")
+        print("Usage: python3 add_learning_log.py \"Your learning message\"")
         sys.exit(1)
     
     log_msg = sys.argv[1]
     add_log(log_msg)
     rebuild_readme()
+    rebuild_learning_logs()
     git_push(log_msg)
+
