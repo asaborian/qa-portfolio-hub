@@ -14,7 +14,7 @@
 - **Material request (Next.js)**
   - GitHub: [https://github.com/asaborian/material-request](https://github.com/asaborian/material-request)
   - 本番環境: [https://material-request.asabori.com](https://material-request.asabori.com)
-  - 概要: 病院向け新規材料採用申請受付システムのプロトタイプ、PlaywrightによるE2Eテスト、CI/CD構築
+  - 概要: 病院向け診療材料新規採用申請システムのプロトタイプ、PlaywrightによるE2Eテスト、CI/CD構築
 - **Staff benefit flow (Next.js)**
   - GitHub: [https://github.com/asaborian/staff-benefit-flow](https://github.com/asaborian/staff-benefit-flow)(作成一時中断)
   - 本番環境: [https://staff-benefit-flow.asabori.com](https://staff-benefit-flow.asabori.com)(未作成)
@@ -54,11 +54,11 @@
 
 ## 📝 Recent Learning Logs
 
+- **2026-07-24 20:55**: 開発が単体・結合テスト、QAがE2Eテストを行う / ポートフォリオの方向性: アプリに対して必要なテスト項目を網羅的にリストアップし、開発への依頼内容とQAの実施内容に仕分け、E2Eで行うべき最小限のテストをplaywrightで実装、加えて、開発の気持ちを理解するために、少しだけvitest等による単体・結合テストを実装
 - **2026-07-23 04:22**: git push -u とは、新しいブランチをリモートに初回送信する際に、ローカルとリモートの紐付けを設定し、次回以降 git push のみで実行可能にするオプション。
 - **2026-07-22 17:17**: テスト投稿2: 想定質問集冒頭にポートフォリオアプリリポジトリへの案内・リンク追加
 - **2026-07-22 17:09**: テスト投稿: 想定質問集冒頭にポートフォリオアプリリポジトリへの案内・リンク追加
 - **2026-07-22 07:32**: 学習ログの管理ファイルをリネームし、全件表示用マークダウンの自動生成に対応
-- **2026-07-22 06:51**: Gitの操作ミスが発覚し原因を調査した。ブランチ管理の基本とAIの不適切な指示を見抜く難しさを再認識した。: https://notes.asabori.com/git-branch-commit-inclusion/
 
 📄 **[すべての学習ログを見る → learning-logs.md](learning-logs.md)**
 

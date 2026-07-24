@@ -14,7 +14,7 @@
 - **Material request (Next.js)**
   - GitHub: [https://github.com/asaborian/material-request](https://github.com/asaborian/material-request)
   - 本番環境: [https://material-request.asabori.com](https://material-request.asabori.com)
-  - 概要: 病院向け新規材料採用申請受付システムのプロトタイプ、PlaywrightによるE2Eテスト、CI/CD構築
+  - 概要: 病院向け診療材料新規採用申請システムのプロトタイプ、PlaywrightによるE2Eテスト、CI/CD構築
 - **Staff benefit flow (Next.js)**
   - GitHub: [https://github.com/asaborian/staff-benefit-flow](https://github.com/asaborian/staff-benefit-flow)(作成一時中断)
   - 本番環境: [https://staff-benefit-flow.asabori.com](https://staff-benefit-flow.asabori.com)(未作成)
