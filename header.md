@@ -14,11 +14,7 @@
 - **Material request (Next.js)**
   - GitHub: [https://github.com/asaborian/material-request](https://github.com/asaborian/material-request)
   - 本番環境: [https://material-request.asabori.com](https://material-request.asabori.com)
-  - 概要: 病院向け診療材料新規採用申請システムのプロトタイプ、PlaywrightによるE2Eテスト、CI/CD構築
-- **Staff benefit flow (Next.js)**
-  - GitHub: [https://github.com/asaborian/staff-benefit-flow](https://github.com/asaborian/staff-benefit-flow)(作成一時中断)
-  - 本番環境: [https://staff-benefit-flow.asabori.com](https://staff-benefit-flow.asabori.com)(未作成)
-  - 概要: 企業向け福利厚生給付管理(申請受付/審査/振込データ出力)システムのプロトタイプ、PlaywrightによるE2Eテスト、CI/CD構築
+  - 概要: 病院向け診療材料新規採用申請システムのプロトタイプ。PlaywrightによるE2Eテスト、CI/CD構築。現職で実際に発案し行った業務改革の内容をWebアプリ化。
 
 ## 📊 Current Status
 - **Goal**: 2028年1月、QAエンジニアとしてのキャリア開始（37歳）
