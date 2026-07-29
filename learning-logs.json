@@ -234,5 +234,9 @@
   {
     "date": "2026-07-29 09:20",
     "message": "ネットワークを流れるデータの呼び名： TCPヘッダー＋送信データ本体＝セグメント / IPヘッダー＋セグメント＝パケット / イーサネットヘッダー＋パケット＋FCS＝フレーム"
+  },
+  {
+    "date": "2026-07-29 10:23",
+    "message": "ARPの動作フローとIPアドレス設計（同一LAN誤認トラブルの回避）: https://notes.asabori.com/arp-operation-flow-and-ip-address-design-avoiding-same-lan-misidentification-issues-jp/"
   }
 ]
