@@ -282,5 +282,9 @@
   {
     "date": "2026-08-06 17:21",
     "message": "Next.js (App Router) における page.tsx と actions.ts の基本お作法 / ■1. page.tsxの原則：特別にブラウザ機能(useStateやonClick等)を使う理由がない限りは何も書かない(デフォルトのサーバーコンポーネントのままにしておくのが最もパフォーマンス・安全性が高いため)。 ■2. actions.tsの原則：DB操作等のサーバー処理関数をまとめる専用ファイルのため、先頭に'use server'を記述するのが標準ルール。"
+  },
+  {
+    "date": "2026-08-07 18:42",
+    "message": "const { userId: clerkUserId } = await auth(); は、オブジェクトのuserIdプロパティをclerkUserIdという変数に代入(定義)する記法"
   }
 ]
