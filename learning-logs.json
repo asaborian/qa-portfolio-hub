@@ -286,5 +286,9 @@
   {
     "date": "2026-08-07 18:42",
     "message": "const { userId: clerkUserId } = await auth(); は、オブジェクトのuserIdプロパティをclerkUserIdという変数に代入(定義)する記法"
+  },
+  {
+    "date": "2026-08-07 18:43",
+    "message": "throwはエラーを投げるだけでなく、関数内で次の行以降の処理を中止する / throwはtry...catchとセットで使う / page.tsx上でtry...catchを書き、try内で呼び出した関数の中身として、actions.ts上でthrowを書く / throwから見て直属の呼び出し元にtry...catchが無くても、どんどん上の階層にtry...catchが見つかるまで探して行って渡される"
   }
 ]
