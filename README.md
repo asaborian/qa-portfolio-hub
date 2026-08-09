@@ -50,11 +50,11 @@
 
 ## 📝 Recent Learning Logs
 
+- **2026-08-10 08:20**: useTransition の仕組み: useTransition は「処理中かどうか」を React が自動で監視してくれる仕組みであり、startTransition()の括弧内に送信処理を書くと、処理中は isPending を true にしてボタンの連打を防ぎ、処理完了時に自動で false に戻してくれるため、フラグの戻し忘れによるバグを防ぎ安全に、送信ボタンをグレーアウトさせて「送信中...」などの動的表示ができる。
 - **2026-08-10 08:09**: use client が必要になる理由: ブラウザ上での動的な操作や状態管理を行う場合。具体的には①Reactフック（useState・useEffect・useTransitionなど）、②イベントハンドラー（onClick・onChange・onSubmitなど）、③ブラウザ標準API（window・document・localStorageなど）、④Next.jsク ライアント専用フック（useRouter・usePathname・useSearchParamsなど）、⑤クライアント依存ライブラリ（Framer Motion・Rechartsなど）の5つが存在する。
 - **2026-08-10 07:55**: form action（Server Component）ではなく、あえてコードの長い use client で書く理由: Next.js 14 以降は HTML 標準の form action を使えば 'use client' なし（Server Component）で簡潔にフォーム送信を書ける。しかし、form action だけだとクライアント上で完結せず、一度サーバーに投げるため、「未入力のまま送信しようとしたときの'必須項目が空欄です'といった警告表示がもたつく」「送信中にボタンを押した感がなく、連打されてしまう」といった不便さが発生する。'use client' を使うことで、「画面をリロードさせずに赤文字で即座にエラーを出す」「送信中のボタン連打を防ぐ」といった、ユーザーが迷わず安全に使える快適な操作性（UX）を実現できる。
 - **2026-08-09 22:16**: IdPにおいて、『このユーザーは本人です』という証明書（XML）をSPへ送るための標準ルール（プロトコル）がSAML
 - **2026-08-09 00:18**: SQLのr1やr2は同じテーブルを2役で使う際につけるあだ名（別名）で、上部のSELECTで突然使われているように見えても中盤のFROM句で定義されており、SQL内部ではFROMから順に処理されるため破綻していない。INNER JOIN（内部結合）は両方のテーブルに存在する共通データだけを抽出する結合方法である。ROW_NUMBER()は指定順に重複のない連番（1, 2, 3…）を振る関数で、PARTITION BY（グループ分け）と組み合わせることで「部署やカテゴリ等のチームごとに番号を1から振り直す」処理ができる。
-- **2026-08-07 18:43**: throwはエラーを投げるだけでなく、関数内で次の行以降の処理を中止する / throwはtry...catchとセットで使う / page.tsx上でtry...catchを書き、try内で呼び出した関数の中身として、actions.ts上でthrowを書く / throwから見て直属の呼び出し元にtry...catchが無くても、どんどん上の階層にtry...catchが見つかるまで探して行って渡される
 
 📄 **[すべての学習ログを見る → learning-logs.md](learning-logs.md)**
 
