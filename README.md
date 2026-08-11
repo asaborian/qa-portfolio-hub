@@ -50,11 +50,11 @@
 
 ## 📝 Recent Learning Logs
 
+- **2026-08-12 07:29**: Reactフックの返り値は、①配列分割代入 const [count, setCount] = useState()(状態と操作関数のセット)、②オブジェクト解体/取得 const { id } = useParams() や const router = useRouter()(複数のプロパティやメソッドを持ったオブジェクト)、③単体値取得 const ref = useRef()(計算結果や参照の箱)の3種類に大別される。
 - **2026-08-12 07:05**: useRouter()はuse clientでのみ動作するNext.jsの画面遷移用関数であり、実行するとpush()、back()、refresh()などのページ移動用メソッドが詰まった1つのオブジェクトを返す仕組みである。
 - **2026-08-11 23:01**: HTML（JSX）を返す関数は画面を作る「Reactコンポーネント」であり、必ずアッパーキャメルケース（PascalCase）で命名するのがルール。これはReact内部でブラウザ標準のHTML小文字タグと区別するため、およびuseState等のReactフックを実行可能にするための必須の構造的仕様である。
 - **2026-08-11 22:48**: App Routerでは、page.tsx内でexport defaultされた関数をそのページの表示内容として認識する仕組み。関数名自体は動作に関係ないが、デバッグ時やコードの可読性の観点からSetupPageなどの名前にすることがベストプラクティスとされている。
 - **2026-08-10 08:20**: useTransition の仕組み: useTransition は「処理中かどうか」を React が自動で監視してくれる仕組みであり、startTransition()の括弧内に送信処理を書くと、処理中は isPending を true にしてボタンの連打を防ぎ、処理完了時に自動で false に戻してくれるため、フラグの戻し忘れによるバグを防ぎ安全に、送信ボタンをグレーアウトさせて「送信中...」などの動的表示ができる。
-- **2026-08-10 08:09**: use client が必要になる理由: ブラウザ上での動的な操作や状態管理を行う場合。具体的には①Reactフック（useState・useEffect・useTransitionなど）、②イベントハンドラー（onClick・onChange・onSubmitなど）、③ブラウザ標準API（window・document・localStorageなど）、④Next.jsク ライアント専用フック（useRouter・usePathname・useSearchParamsなど）、⑤クライアント依存ライブラリ（Framer Motion・Rechartsなど）の5つが存在する。
 
 📄 **[すべての学習ログを見る → learning-logs.md](learning-logs.md)**
 

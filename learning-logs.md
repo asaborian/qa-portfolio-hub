@@ -2,6 +2,7 @@
 
 [← READMEに戻る](./README.md)
 
+- **2026-08-12 07:29**: Reactフックの返り値は、①配列分割代入 const [count, setCount] = useState()(状態と操作関数のセット)、②オブジェクト解体/取得 const { id } = useParams() や const router = useRouter()(複数のプロパティやメソッドを持ったオブジェクト)、③単体値取得 const ref = useRef()(計算結果や参照の箱)の3種類に大別される。
 - **2026-08-12 07:05**: useRouter()はuse clientでのみ動作するNext.jsの画面遷移用関数であり、実行するとpush()、back()、refresh()などのページ移動用メソッドが詰まった1つのオブジェクトを返す仕組みである。
 - **2026-08-11 23:01**: HTML（JSX）を返す関数は画面を作る「Reactコンポーネント」であり、必ずアッパーキャメルケース（PascalCase）で命名するのがルール。これはReact内部でブラウザ標準のHTML小文字タグと区別するため、およびuseState等のReactフックを実行可能にするための必須の構造的仕様である。
 - **2026-08-11 22:48**: App Routerでは、page.tsx内でexport defaultされた関数をそのページの表示内容として認識する仕組み。関数名自体は動作に関係ないが、デバッグ時やコードの可読性の観点からSetupPageなどの名前にすることがベストプラクティスとされている。
