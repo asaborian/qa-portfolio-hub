@@ -346,5 +346,9 @@
   {
     "date": "2026-08-13 07:27",
     "message": "フォーム送信時のエラー状態リセット（setErrorMessage(null)）は、処理の終了時ではなく「次の送信の開始直前」に行うのが定石である。「使い終わったら元通りに片付ける」のではなく「前の人が汚したものを次に使う人が直前に掃除してから使う」形を取ることで、エラー表示が一瞬で消えてしまうのを防いでユーザーに確認・修正させる時間を与えつつ（UX観点）、再送信の瞬間に前回の古い表示を確実にクリアして状態を初期化する設計である。"
+  },
+  {
+    "date": "2026-08-13 11:45",
+    "message": "DDDにおけるエンティティと値オブジェクトの構造と実装（TypeScript）: https://notes.asabori.com/entity-vs-value-object-in-typescript-structural-differences-and-implementation-ddd-jp/"
   }
 ]
