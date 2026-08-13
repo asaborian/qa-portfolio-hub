@@ -350,5 +350,9 @@
   {
     "date": "2026-08-13 11:45",
     "message": "DDDにおけるエンティティと値オブジェクトの構造と実装（TypeScript）: https://notes.asabori.com/entity-vs-value-object-in-typescript-structural-differences-and-implementation-ddd-jp/"
+  },
+  {
+    "date": "2026-08-13 11:47",
+    "message": "DDDにおける主要概念の定義。エンティティは識別子（ID）により同一性が識別され、属性値が変化しても同一の存在として扱われるオブジェクト。値オブジェクトは識別子を持たず、値そのものの同一性で判断される不変なオブジェクトであり、自身のバリデーションルール等を内包する。コンテキストマップは、境界づけられたコンテキスト間におけるデータの流れる方向や連携関係を可視化した構造図。"
   }
 ]
