@@ -378,5 +378,9 @@
   {
     "date": "2026-08-15 23:13",
     "message": "TypeScriptのcatch(error)で捕捉されるエラーはunknown型となるため、そのままerror.messageを参照すると型エラーとなる。if (error instanceof Error)による型ガードを行うことで、実行時チェックと型の絞り込みを同時に実現し安全にプロパティへアクセスできる。また、elseブロックで予期せぬエラー（ネットワーク障害やシステムエラー等）を安全に捕捉することで、アプリのクラッシュや生のエラー露出による情報漏洩・ユーザーの混乱を防ぐ防御的プログラミングとなる。"
+  },
+  {
+    "date": "2026-08-16 14:16",
+    "message": "Webアプリの処理構造は、①UI描画（app/setup/page.tsxのJSX）と②入力保持・イベントハンドラ（app/setup/page.tsxのuseStateやhandleSubmit）が「ビュー（View）」、③入力値を受け取りDB処理を呼ぶServer Action（app/setup/actions.ts）が「コントローラ（Controller）」、④DB操作処理（db/users.ts）が「モデル（Model）」に分類できる。"
   }
 ]
