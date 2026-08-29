@@ -63,13 +63,36 @@ def rebuild_readme(logs):
         with open(FAQ_FILE, 'r', encoding='utf-8') as f:
             faq_text = f.read()
 
-        # 「### Q:」で分割し、先頭の案内文（`### Q:`の前に書いた文）を除外してFAQブロックのみ抽出
-        raw_blocks = faq_text.split('### Q:')
-        faq_blocks = [f"### Q:{b.rstrip()}" for b in raw_blocks[1:] if b.strip()]
-        
-        excerpt = faq_blocks[:MAX_FAQ_IN_README]
+        # READMEに優先掲載したい最重要3問のタイトル文字列
+        target_questions = [
+            "Q: 就職したらどのように貢献できるか？",
+            "Q: 勤務形態に関して合意が必要な条件はあるか？",
+            "Q: なぜ37歳実務未経験でITエンジニアを目指すに至ったのか？"
+        ]
+
+        # '### ' で分割して各Q&Aブロックを取得
+        raw_blocks = faq_text.split('### ')
+        faq_blocks = [f"### {b.rstrip()}" for b in raw_blocks if b.startswith('Q:')]
+
+        # 指定タイトルが含まれるブロックを検索して抽出
+        excerpt = []
+        for q_title in target_questions:
+            for block in faq_blocks:
+                if q_title in block:
+                    excerpt.append(block)
+                    break
+
+        # タイトル変更や誤字で3問揃わなかった場合のフォールバック（先頭から順に補填）
+        if len(excerpt) < MAX_FAQ_IN_README:
+            print(f"Warning: Expected {MAX_FAQ_IN_README} FAQ items by title, but found {len(excerpt)}. Falling back to top items.")
+            for block in faq_blocks:
+                if block not in excerpt:
+                    excerpt.append(block)
+                if len(excerpt) == MAX_FAQ_IN_README:
+                    break
+
         faq_section.append("\n\n".join(excerpt))
-        faq_section.append(f"\n📄 **[続きを読む → {FAQ_FILE}]({FAQ_FILE})**")
+        faq_section.append(f"\n📄 **[すべての想定質問と回答を見る（全28問） → {FAQ_FILE}]({FAQ_FILE})**")
         content_parts.append("\n".join(faq_section))
 
     with open(README_FILE, 'w', encoding='utf-8') as f:
