@@ -92,7 +92,7 @@ def rebuild_readme(logs):
                     break
 
         faq_section.append("\n\n".join(excerpt))
-        faq_section.append(f"\n📄 **[すべての想定質問と回答を見る（全28問） → {FAQ_FILE}]({FAQ_FILE})**")
+        faq_section.append(f"\n📄 **[すべての想定質問と回答を見る → {FAQ_FILE}]({FAQ_FILE})**")
         content_parts.append("\n".join(faq_section))
 
     with open(README_FILE, 'w', encoding='utf-8') as f:
