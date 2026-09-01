@@ -40,6 +40,6 @@
 - [x] ポートフォリオアプリの公開 - 2026年7月公開
   - [x] Neon / Drizzle / Clerk セットアップ - 2026年7月完成
   - [x] DBスキーマ定義 - 2026年8月完成
-  - [ ] GitHub Actions / Vercel でのCI/CD環境構築 - 2026年8月完成予定
-  - [ ] Next.js コーディング（機能実装） - 2027年6月完成予定
-  - [ ] テスト設計・実装（Vitest / Playwright） - 2027年7月完成予定
+  - [ ] GitHub Actions / Vercel でのCI/CD環境構築 - 2027年6月完成予定
+  - [ ] Next.js コーディング（機能実装） - 2027年7月完成予定
+  - [ ] テスト設計・実装（Vitest / Playwright） - 2027年8月完成予定
